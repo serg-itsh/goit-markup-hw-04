@@ -7,13 +7,11 @@ html {
 *::after {
   box-sizing: inherit;
 } */
-
 /* цвет основного текста #000000 */
 /* вторичный цвет текста rgba(0, 0, 0, 0.8);
  */
 /* белый #FFFFFF; */
 /* акцент #18A0FB; */
-
 /* вторичный цвет фона #F5F5F5; */
 
 :root {
@@ -46,13 +44,7 @@ body {
   margin: 0 auto;
 }
 
-.box {
-  /* width: 1600px; */
-  /* align-items: center; */
-}
-
 /* Утилиты */
-
 /* Особенности */
 
 .section {
@@ -86,16 +78,8 @@ ul {
   margin-bottom: 0;
 }
 
-/* .container {
-  width: 1200px; */
-/* height: 600px; */
-/* margin: 0 auto; */
-/* text-align: center; */
-/* left: 0px;
-  top: 80px; */
-/* background: #2f303a; */
-/* } */
-
+/* top line bg */
+/* Line */
 /* Верхняя линия */
 
 nav.header {
@@ -104,12 +88,9 @@ nav.header {
 }
 
 .page-header {
-  /* padding-left: 15px;
-  padding-right: 15px; */
   margin-left: auto;
   margin-right: auto;
-  /* margin: 0 auto;
-  width: 1600px; */
+
   border-bottom: 1px solid #ececec;
 }
 
@@ -117,22 +98,10 @@ nav.header {
   margin-right: 50px;
 }
 
-.header {
-  /* margin: 0 auto; */
-  /* position: absolute; */
-  /* border-bottom: 1px solid #ececec;
-  width: 1600px; */
-  /* height: 80px;
-  margin-left: auto;
-  margin-right: auto; */
+/* ✅ Применится только к ссылкам, которые лежат внутри тега
+ с классом social-links */
 
-  /* left: 0px;
-  top: 80px; */
-  /* background: #2F303A; */
-}
-
-/* ✅ Применится только к ссылкам, которые лежат внутри тега с классом social-links */
-
+/* WebStudio */
 /* Logo */
 
 .logo {
@@ -160,6 +129,12 @@ nav.header {
   color: var(--accent-color);
 }
 
+/* Студия */
+/* Активная ссылка */
+/* Портфолио */
+/* Контакты */
+
+/* Menu Nav */
 /* Main-nav */
 
 .main-nav {
@@ -168,6 +143,8 @@ nav.header {
   justify-content: space-between;
 }
 
+/* envelope */
+/* info@devstudio.com */
 /* site-nav */
 
 .site-nav {
@@ -177,13 +154,8 @@ nav.header {
 }
 
 .site-nav .item {
-  /* background-color: tomato; */
   margin-right: 50px;
 }
-
-/* .site-nav .item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 .site-nav .link {
   display: block;
@@ -195,9 +167,6 @@ nav.header {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  /* background-color: tomato;
-  margin-right: 50; */
 }
 
 .site-nav .link:hover,
@@ -210,6 +179,12 @@ nav.header {
   text-decoration: none;
 }
 
+/* envelope (hover) */
+/* info@devstudio.com */
+/* envelope */
+/* Hover */
+/* E-mail */
+
 /* Auth-nav */
 
 .auth-nav {
@@ -220,6 +195,14 @@ nav.header {
 .auth-nav .item {
   margin-left: 12px;
 }
+
+/* +38 096 111 11 11 */
+/* Vector */
+/* Vector */
+/* smartphone */
+/* Tel */
+
+/* Верхняя линия */
 
 .auth-nav .link-contacts {
   color: var(--contacts-colors);
@@ -234,16 +217,18 @@ nav.header {
 /* Герой */
 /* Шапка */
 
+/* Bg */
+/* Img */
+/* Img Overlay */
+
 .hero {
   padding-top: 200px;
   padding-bottom: 280px;
-  /* width: 1600px; */
-  /* height: 600px; */
   text-align: center;
-  /* left: 0px;
-  top: 80px; */
   background: #2f303a;
 }
+
+/* Эффективные решения для вашего бизнеса */
 
 .hero-title {
   margin: 0 auto;
@@ -263,6 +248,16 @@ nav.header {
 
 /* Batton */
 
+/* bg */
+/* Заказать услугу */
+/* Button */
+
+/* bg */
+/* Заказать услугу */
+/* Button (Hover) */
+
+/* Шапка */
+
 .button {
   margin-top: 30px;
   display: inline-block;
@@ -276,15 +271,19 @@ nav.header {
 }
 
 .filters-list-btn {
-  /* position: absolute; */
   width: 128px;
   height: 38px;
   left: 576px;
   top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
-  /* text-decoration: none; */
 }
+
+/* Чем мы занимаемся */
+
+/* box 1 */
+/* box 2 */
+/* box 3 */
 
 .filters-btn:hover,
 .filters-btn:focus {
@@ -311,6 +310,32 @@ nav.header {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+/* Особенности */
+
+/* Внимание к деталям */
+/* Идейные соображения, а также начало повседневной работы по формированию позиции. */
+
+/* Rectangle 3 */
+/* Vector */
+/* Vector */
+/* Group */
+/* Group */
+/* Group */
+
+/* antenna 1 */
+
+/* Group 1 */
+
+/* Feature 1 */
+
+/* Feature 2 */
+
+/* Feature 3 */
+
+/* Feature 4 */
+
+/* Особенности */
 
 .section-description {
   font-size: 36px;
@@ -347,22 +372,10 @@ img {
 
 /* Examples */
 
-/* .container-work {
-  display: flex;
-  flex-wrap: wrap;
-  border-color: teal;
-  margin: -15px;
-} */
-
 .work-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* margin-top: 50px;
-  margin-bottom: 94px; */
-  /* margin-bottom: 94px; */
-  /* margin: 15px; */
-  /* background-color: tomato; */
 }
 
 .work-list-4 {
@@ -377,6 +390,29 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+/* Наша команда */
+/* team */
+
+/* Section bg */
+
+/* team card 1 */
+/* card bg */
+/* img */
+/* Игорь Демьяненко */
+/* Product Designer */
+
+/* Social links */
+/* Ellipse */
+/* team card 1 */
+
+/* team card 2 */
+
+/* team card 3 */
+
+/* team card 4 */
+
+/* team */
 
 .img {
   position: absolute;
@@ -429,7 +465,6 @@ img {
 }
 
 .section-title {
-  /* padding-top: 94px; */
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -443,8 +478,6 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-
-  /* background-color: tomato; */
 }
 
 .card-bg {
@@ -467,17 +500,12 @@ img {
 .feature-list-7 {
   display: flex;
   justify-content: center;
-  /* margin-top: 30px; */
-  /* padding-top: 30px; */
   margin-bottom: 10px;
 }
 
 .feature-list-8 {
   display: flex;
   justify-content: center;
-  /* padding-bottom: 90px; */
-  /* margin-top: 30px; */
-  /* margin-bottom: 30px; */
 }
 
 .feature-list-.team-items {
@@ -488,7 +516,26 @@ img {
   color: #757575;
 }
 
+/* Постоянные клиенты */
+
+/* Client 1 */
+/* Client 2 */
+/* Client 3 */
+/* Client 4 */
+/* Client 5 */
+/* Client 6 */
+
+/* Постоянные клиенты */
+
 /* Portfolio */
+
+/* Портфолио */
+
+/* filters */
+
+/* project 1 */
+
+/* project 9 */
 
 .portfolio {
   padding-top: 94px;
@@ -501,10 +548,10 @@ img {
   justify-content: center;
   align-items: center;
   border-color: teal;
-  /* margin-top: 94px; */
   margin-bottom: 50px;
-  /* margin-right: 8px; */
 }
+
+/* Портфолио btn-hero-1 */
 
 .btn-hero-1 {
   margin-right: 8px;
@@ -515,8 +562,6 @@ img {
   border: 0;
   background: #f5f4fa;
   border-radius: 4px;
-  /* margin: 94px 4px 50px 4px; */
-  /* margin-right: 8px; */
 }
 
 .flex-container-2 {
@@ -528,23 +573,14 @@ img {
   margin: -15px;
 }
 
-/* width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto; */
-
 .flex-element {
   display: flex;
   flex-wrap: wrap;
 }
 
 .flex-element {
-  /* width: calc((100% -60px) / 3); */
   width: 370px;
-  /* background-color: tomato; */
   margin: 15px;
-  /* margin-bottom: 30px; */
 }
 
 .flex-element:nth-child(3n) {
@@ -559,19 +595,6 @@ img {
 
 .project-p {
   flex-wrap: wrap;
-}
-
-.project-p-1 {
-  /* display: flex;
-  margin-top: 20px;
-  margin-bottom: 4px;
-  margin-left: 24px; */
-}
-
-.project-p-2 {
-  /* display: flex;
-  margin-left: 24px;
-  margin-bottom: 20px; */
 }
 
 /* .flex-element:nth-child(-n + 3) {
@@ -606,6 +629,37 @@ img {
 /* Я не джин 🧞 */
 /* Подвал  */
 
+/* Footer bg */
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+/* WebStudio */
+
+.logo-footer {
+  margin-left: auto;
+}
+
+/* Address */
+
+address {
+  margin-top: 20px;
+}
+
+.link-footer {
+  margin-left: auto;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* г. Киев, пр-т Леси Украинки, 26 */
+
 .copyright {
   font-style: normal;
   font-weight: 400;
@@ -613,6 +667,9 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+/* info@example.com */
+/* +38 099 111 11 11 */
 
 .copyright-links {
   font-family: Roboto;
@@ -624,30 +681,16 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  /* width: 1600px; */
-  background-color: #2f303a;
-}
+/* присоединяйтесь */
 
-.logo-footer {
-  margin-left: auto;
-  /* padding-top: 60px; */
-  /* margin-bottom: 20px; */
-  /* padding-bottom: 161px; */
-}
+/* Social */
+/* Social links */
 
-address {
-  margin-top: 20px;
-}
+/* Ellipse */
+/* Ellipse */
+/* Ellipse */
+/* Ellipse */
 
-.social-links a {
-  color: #ffffff;
-  text-decoration: none;
-}
+/* Social links */
 
-.link-footer {
-  margin-left: auto;
-  /* padding-bottom: 60px; */
-}
+/* Social */
