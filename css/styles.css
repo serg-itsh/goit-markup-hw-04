@@ -657,9 +657,9 @@ img {
   margin: 15px;
 }
 
-.flex-element:nth-child(3n) {
+/* .flex-element:nth-child(3n) {
   margin-right: 0;
-}
+} */
 
 .project {
   padding: 20px 24px;
@@ -671,9 +671,9 @@ img {
   flex-wrap: wrap;
 }
 
-/* .flex-element:nth-child(-n + 3) {
+.flex-element:nth-child(-n + 3) {
   margin-bottom: 0;
-} */
+}
 
 .project-p-1.text-category-p {
   margin-bottom: 4px;
