@@ -786,6 +786,25 @@ address {
   margin-right: 10px;
 }
 
+.social-item {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+svg {
+  fill:white
+}
+	
+	    
+
+
 /* Social */
 /* Social links */
 
