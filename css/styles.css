@@ -36,6 +36,27 @@ body {
   line-height: 1.71;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -59,18 +80,6 @@ body {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 /* Верхняя линия */
 
 /* top line bg */
@@ -83,13 +92,13 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
+.page-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav.header {
+.nav {
   display: flex;
   align-items: center;
 }
@@ -99,7 +108,6 @@ nav.header {
 
 /* Logo */
 /* WebStudio */
-
 .logo {
   color: var(--title-text-color);
   color: #2196f3;
@@ -113,26 +121,28 @@ nav.header {
   text-decoration: none;
 }
 
-.studio-dark {
-  color: var(--title-text-color);
-}
-
-.studio-white {
-  color: var(--primary-color);
-}
-
 .logo:hover {
   color: var(--accent-color);
 }
 
-/* Menu Nav */
+.logo-dark {
+  color: var(--title-text-color);
+}
 
+.logo-white {
+  color: var(--primary-color);
+}
+/* Menu Nav */
 /* Студия */
 
 .site-nav {
   display: flex;
   flex-wrap: wrap;
   margin-left: 93px;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav .link {
@@ -145,10 +155,6 @@ nav.header {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.item-0 {
-  margin-right: 50px;
 }
 
 .site-nav .link:hover,
@@ -180,28 +186,38 @@ nav.header {
   margin-left: auto;
 }
 
-.auth-nav .item {
-  margin-left: 12px;
-}
-
-.link-1 {
+.auth-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
 /* +38 096 111 11 11 */
-
-.site-nav .item {
-  margin-right: 50px;
-}
 
 /* Tel */
 /* Vector */
 /* Vector */
 /* smartphone */
 
-.auth-nav .link-contacts {
+.auth-nav-link {
+  display: flex;
+  align-items: center;
+
   color: var(--contacts-colors);
   text-decoration: none;
+}
+
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav-link:hover .auth-nav-icon,
+.auth-nav-link:focus .auth-nav-icon {
+  fill: var(--accent-color);
+}
+
+.auth-nav-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Hero */
@@ -255,14 +271,18 @@ nav.header {
 /* Batton */
 .button {
   margin-top: 30px;
-  display: inline-block;
+
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
-  background: #2196f3;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-color);
+  background-color: var(--accent-color);
   border-radius: 4px;
-  color: #ffffff;
+  border: none;
 }
 
 /* bg */
@@ -278,26 +298,19 @@ nav.header {
 
 /* Особенности */
 
-.list-2 {
-  padding-left: 0px;
-  list-style: none;
-  text-decoration: none;
-}
-
 /* Внимание к деталям */
-/* Идейные соображения, а также начало повседневной работы по формированию позиции. */
 
-.feature-list.text-category {
-  color: #212121;
+.feature-list .text-category {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
+
+  color: #212121;
 }
 
-.feature-list.text-items {
+.feature-list .text-items {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
@@ -305,41 +318,16 @@ nav.header {
   color: #757575;
 }
 
-/* Rectangle 3 */
-/* Vector */
-/* Vector */
-/* Group */
-/* Group */
-/* Group */
-
-/* antenna 1 */
-
-/* .item-pic::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: var(--pic-background-color);
-} */
-
 .item-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--pic-background-color);
   border-radius: 4px;
-}
-
-.flex-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon {
-  padding: 0;
-  border: none;
 }
 
 .feature-icon {
@@ -363,13 +351,9 @@ nav.header {
   line-height: 1.39;
 }
 
-img {
-  display: block;
-}
-
-.item {
+/* .item {
   width: 270px;
-}
+} */
 
 .feature-list .title,
 .work-list .title {
@@ -390,6 +374,10 @@ img {
 .feature-list .item-2 {
   width: 270px;
   margin-right: 30px;
+}
+
+.feature-list .item-2:last-child {
+  margin-right: 0;
 }
 
 /* box 1 */
@@ -596,11 +584,6 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.flexy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .clients-list-item:not(:last-child) {
