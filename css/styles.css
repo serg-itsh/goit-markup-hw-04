@@ -539,6 +539,22 @@ img {
   color: #757575;
 }
 
+.team-member-text {
+  padding: 30px 32px;
+}
+
+.flexy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-item-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Постоянные клиенты */
 
 .clients {
@@ -704,6 +720,10 @@ footer {
   background-color: #2f303a;
 }
 
+.logo-address {
+  margin-right: 70px;
+}
+
 /* WebStudio */
 
 .logo-footer {
@@ -749,6 +769,31 @@ address {
 }
 
 /* присоединяйтесь */
+
+.basement > .container {
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.basement-header {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.no-style-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
 
 /* Social */
 /* Social links */
