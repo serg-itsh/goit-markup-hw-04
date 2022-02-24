@@ -28,6 +28,10 @@ html {
   --pic-background-color: #f5f4fa;
 
   --transition: rgba(0.4, 0, 0.2, 1);
+
+  --team-social-icon-color: #afb1b8;
+
+  
 }
 
 body {
@@ -588,9 +592,21 @@ img {
   list-style: none;
 }
 
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
+.client-icon {
+  fill: var(--team-social-icon-color);  
 }
+
+.client-pic {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--team-social-icon-color);
+  border-radius: 4px;  
+}
+
+ .client-icon:hover,
+ .client-pic:hover {
+  fill: #2196f3;  
+}  
 
 /* Client 1 */
 /* Client 2 */
@@ -796,6 +812,12 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.social-item:hover {
+  /* background-color:#18a0fb; */
+  background: #2196F3;
+
 }
 
 svg {
