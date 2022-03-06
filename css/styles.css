@@ -31,7 +31,7 @@ html {
 
   --team-social-icon-color: #afb1b8;
 
-  
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -62,6 +62,18 @@ ul {
 img {
   display: block;
 }
+
+.no-style-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* .no-style-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} */
 
 .container {
   width: 1200px;
@@ -300,6 +312,8 @@ img {
   color: var(--primary-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Особенности */
@@ -543,11 +557,11 @@ img {
   justify-content: center;
 }
 
-.social-item-4 {
+/* .social-item-4 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* Постоянные клиенты */
 
@@ -586,27 +600,34 @@ img {
   margin-right: 30px;
 }
 
-.no-style-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .client-icon {
-  fill: var(--team-social-icon-color);  
+  fill: var(--team-social-icon-color);
 }
 
 .client-pic {
   width: 170px;
   height: 92px;
   border: 1px solid var(--team-social-icon-color);
-  border-radius: 4px;  
+  border-radius: 4px;
 }
 
- .client-icon:hover,
- .client-pic:hover {
-  fill: #2196f3;  
-}  
+.client-pic {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--team-social-icon-color);
+  border-radius: 4px;
+  transition: border-color var(--transition);
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  fill: #2196f3;
+}
+
+.client-pic:hover,
+.client-pic:focus {
+  border: 1px solid #2196f3;
+}
 
 /* Client 1 */
 /* Client 2 */
@@ -638,7 +659,7 @@ img {
 
 /* Портфолио btn-hero-1 */
 
-.btn-hero-1 {
+.btn-hero-1:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -646,13 +667,12 @@ img {
   padding: 6px 22px;
   border: 0;
   background: #f5f4fa;
-  border-radius: 4px;  
-  border: none;  
-  font-family: inherit;  
-  border-color: ;
-}
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
 
-
+  transition: color var(--transition), background-color var(--transition),
+    box-shadow var(--transition);
 }
 
 /* project 1 */
@@ -685,6 +705,12 @@ img {
 
 .project-p {
   flex-wrap: wrap;
+}
+
+.project-p:hover,
+.project-p:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-element:nth-child(-n + 3) {
@@ -802,11 +828,11 @@ address {
   margin-right: 10px;
 }
 
-.social-item {
-  display: flex; 
+.social-link {
+  /* display: flex; 
   align-items: center;
-  justify-content: center;
-  margin-right: 10px;
+  justify-content: center; */
+  /* margin-right: 10px; */
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -814,18 +840,18 @@ address {
   cursor: pointer;
 }
 
-.social-item:hover {
+.social-link:hover {
   /* background-color:#18a0fb; */
-  background: #2196F3;
+  background: #2196f3;
+}
 
+.icon-social {
+  fill: var(--team-social-icon-color);
 }
 
 svg {
-  fill:white
+  fill: white;
 }
-	
-	    
-
 
 /* Social */
 /* Social links */
