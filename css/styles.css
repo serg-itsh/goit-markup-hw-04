@@ -843,13 +843,13 @@ address {
   fill: var(--team-social-icon-color);
 }
 
-/* .icon-social:hover,
+.icon-social:hover,
 .icon-social:focus {
   fill: var(--primary-color);
-} */
+}
 
 .icon-social-basement {
-  fill: var(--white);
+  fill: var(--primary-color);
 }
 
 /* svg {
