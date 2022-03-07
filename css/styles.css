@@ -829,10 +829,6 @@ address {
 }
 
 .social-link {
-  /* display: flex; 
-  align-items: center;
-  justify-content: center; */
-  /* margin-right: 10px; */
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -849,9 +845,17 @@ address {
   fill: var(--team-social-icon-color);
 }
 
-svg {
+.icon-social:hover {
   fill: white;
 }
+
+.icon-social-basement {
+  fill: var(--primary-color);
+}
+
+/* svg {
+  fill: white;
+} */
 
 /* Social */
 /* Social links */
