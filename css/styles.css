@@ -611,14 +611,6 @@ img {
   border-radius: 4px;
 }
 
-.client-pic {
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--team-social-icon-color);
-  border-radius: 4px;
-  transition: border-color var(--transition);
-}
-
 .client-icon:hover,
 .client-icon:focus {
   fill: #2196f3;
@@ -814,11 +806,11 @@ address {
   color: var(--primary-color);
 }
 
-.no-style-list {
+/* .no-style-list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
+} */
 
 .social-item:not(:last-child) {
   margin-right: 10px;
